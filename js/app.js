@@ -9,3 +9,10 @@ function cargarEventListeners() {
     // dispara cuando se presiona el boton de agregar al carrito
     cursos.addEventListener('click', comprarcurso);
 }
+
+
+// funciones
+
+function comprarcurso(e) {
+    e.preventDefault();
+}
