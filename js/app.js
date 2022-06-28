@@ -82,3 +82,17 @@ function eliminarCurso(e) {
 
     //console.log('eliminado');
 }
+
+
+
+// funcion vaciar carrito 
+function vaciarCarrito() {
+    // la forma lenta no recomendado
+    //listaCursos.innerHTML = '';
+    // la forma mas rapida y recomendado
+    while (listaCursos.firstChild) {
+        listaCursos.removeChild(listaCursos.firstChild);
+    }
+    return false;
+
+}
