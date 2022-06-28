@@ -84,12 +84,13 @@ function eliminarCurso(e) {
     let curso;
     if (e.target.classList.contains('borrar-curso')) {
         e.target.parentElement.parentElement.remove();
+
     }
 
 
     //console.log('eliminado');
 
-    eliminarCursoLocalStorage();
+    eliminarCursoLocalStorage(curso);
 }
 
 
