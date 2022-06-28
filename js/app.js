@@ -69,6 +69,9 @@ function insertarCarrito(curso) {
     </td>
     `;
     listaCursos.appendChild(row);
+
+    // guardar curso en localStorage
+    guardarCursoLocalStorage(curso);
 }
 
 // funcion eliminar cursos
