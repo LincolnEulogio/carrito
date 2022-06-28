@@ -2,6 +2,7 @@
 const carrito = document.getElementById('carrito');
 const cursos = document.getElementById('lista-cursos');
 const listaCursos = document.querySelector('#lista-carrito tbody');
+const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
 //listeners
 cargarEventListeners();
@@ -12,6 +13,9 @@ function cargarEventListeners() {
 
     // cuando se elimina un curso del Carrito
     carrito.addEventListener('click', eliminarCurso);
+
+    // nombre de la funcion  vaciar carrito
+    vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
 
 
