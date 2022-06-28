@@ -16,6 +16,10 @@ function cargarEventListeners() {
 
     // nombre de la funcion  vaciar carrito
     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+
+
+    // al cargar la pagina mostrar localStorage
+    document.addEventListener('DOMContentLoaded', leerLocalStorage);
 }
 
 
