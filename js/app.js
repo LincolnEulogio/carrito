@@ -43,3 +43,10 @@ function leerDatosCurso(curso) {
     // agregamos el nombre de la funcion que va ser insertar a carrito
     insertarCarrito();
 }
+
+
+// insertar el curso seleccionado y creamos la funcion que creamos su nombre hace un  momento
+
+function insertarCarrito() {
+
+}
