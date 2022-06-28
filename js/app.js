@@ -9,6 +9,9 @@ cargarEventListeners();
 function cargarEventListeners() {
     // dispara cuando se presiona el boton de agregar al carrito
     cursos.addEventListener('click', comprarcurso);
+
+    // cuando se elimina un curso del Carrito
+    carrito.addEventListener('click', eliminarCurso);
 }
 
 
