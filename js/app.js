@@ -38,5 +38,8 @@ function leerDatosCurso(curso) {
             id: curso.querySelector('a').getAttribute('data-id')
         }
         //console.log(curso);
-    console.log(infoCurso);
+        //console.log(infoCurso);
+
+    // agregamos el nombre de la funcion que va ser insertar a carrito
+    insertarCarrito();
 }
