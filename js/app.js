@@ -88,6 +88,8 @@ function eliminarCurso(e) {
 
 
     //console.log('eliminado');
+
+    eliminarCursoLocalStorage();
 }
 
 
