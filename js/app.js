@@ -15,4 +15,6 @@ function cargarEventListeners() {
 
 function comprarcurso(e) {
     e.preventDefault();
+    // imprimimos en consola para ver los datos al cliquear el boton
+    console.log(e.target.classList);
 }
