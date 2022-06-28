@@ -42,12 +42,24 @@ function leerDatosCurso(curso) {
         //console.log(infoCurso);
 
     // agregamos el nombre de la funcion que va ser insertar a carrito
-    insertarCarrito();
+    insertarCarrito(infoCurso);
 }
 
 
 // insertar el curso seleccionado y creamos la funcion que creamos su nombre hace un  momento
 
-function insertarCarrito() {
-
+function insertarCarrito(curso) {
+    // hacemos un row para agregar al Carrito
+    const row = document.createElement('tr');
+    row.innerHTML = `
+    <td>
+        <img src="${curso.imagen}">
+    </td>
+    <td>${curso.titulo}</td>
+    <td>${curso.precio}</td>
+    <td>
+    <a href="#" class="borrar-curso" data-id="${curso.id}">X</a> 
+    </td>
+    `;
+    listaCursos.appendChild(row);
 }
