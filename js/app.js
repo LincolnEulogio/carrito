@@ -66,3 +66,15 @@ function insertarCarrito(curso) {
     `;
     listaCursos.appendChild(row);
 }
+
+// funcion eliminar cursos
+function eliminarCurso(e) {
+    e.preventDefault();
+    let curso;
+    if (e.target.classList.contains('borrar-curso')) {
+        e.target.parentElement.parentElement.remove();
+    }
+
+
+    //console.log('eliminado');
+}
