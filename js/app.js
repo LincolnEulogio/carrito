@@ -26,3 +26,17 @@ function comprarcurso(e) {
         leerDatosCurso(curso);
     }
 }
+
+
+// funcion leerDatosCurso
+function leerDatosCurso(curso) {
+    // creamos un objeto para ver la informacion del curso
+    const infoCurso = {
+            imagen: curso.querySelector('img').src,
+            titulo: curso.querySelector('h4').textContent,
+            precio: curso.querySelector('.precio span').textContent,
+            id: curso.querySelector('a').getAttribute('data-id')
+        }
+        //console.log(curso);
+    console.log(infoCurso);
+}
