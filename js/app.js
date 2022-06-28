@@ -1,6 +1,7 @@
 // creamos las variables
 const carrito = document.getElementById('carrito');
 const cursos = document.getElementById('lista-cursos');
+const listaCursos = document.querySelector('#lista-carrito tbody');
 
 //listeners
 cargarEventListeners();
