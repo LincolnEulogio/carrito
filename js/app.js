@@ -16,5 +16,10 @@ function cargarEventListeners() {
 function comprarcurso(e) {
     e.preventDefault();
     // imprimimos en consola para ver los datos al cliquear el boton
-    console.log(e.target.classList);
+    //console.log(e.target.classList);
+    // incluimos una condicional if
+    if (e.target.classList.contains('agregar-carrito')) {
+        const curso = e.target.parentElement.parentElement;
+        console.log(curso);
+    }
 }
