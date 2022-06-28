@@ -20,6 +20,9 @@ function comprarcurso(e) {
     // incluimos una condicional if
     if (e.target.classList.contains('agregar-carrito')) {
         const curso = e.target.parentElement.parentElement;
-        console.log(curso);
+        //console.log(curso);
+
+        // asi que creamos una funcion para que lea los datos de ese card seleccionado
+        leerDatosCurso(curso);
     }
 }
