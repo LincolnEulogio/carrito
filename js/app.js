@@ -94,7 +94,7 @@ function eliminarCurso(e) {
 
     //console.log('eliminado');
 
-    //eliminarCursoLocalStorage(curso);
+    eliminarCursoLocalStorage(curso);
 }
 
 
