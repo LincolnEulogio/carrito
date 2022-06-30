@@ -163,3 +163,23 @@ function leerLocalStorage() {
         listaCursos.appendChild(row);
     });
 }
+
+function eliminarCursoLocalStorage(curso) {
+    let cursosLS;
+    // Obtenemos el arreglo de cursos
+    cursosLS = obtenerCursosLocalStorage();
+    // Iteramos comparando el ID del curso borrado con los del LS
+    cursosLS.forEach(function(cursoLS, index) {
+        if (cursoLS.id === curso) {
+            cursosLS.splice(index, 1);
+        }
+    });
+    // Añadimos el arreglo actual a storage
+    localStorage.setItem('cursos', JSON.stringify(cursosLS));
+}
+
+// Elimina todos los cursos de Local Storage
+
+function vaciarLocalStorage() {
+    localStorage.clear();
+}
