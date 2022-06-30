@@ -107,10 +107,12 @@ function vaciarCarrito() {
     while (listaCursos.firstChild) {
         listaCursos.removeChild(listaCursos.firstChild);
     }
-    return false;
+
 
     // nombre de funcion vaciar de locastorage
     vaciarLocalStorage();
+
+    return false;
 
 }
 
