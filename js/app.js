@@ -109,6 +109,9 @@ function vaciarCarrito() {
     }
     return false;
 
+    // nombre de funcion vaciar de locastorage
+    vaciarLocalStorage();
+
 }
 
 
